@@ -144,7 +144,7 @@
                       <a href="#about-section" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#Services-section" class="nav-link dropdown-toggle"
+                      <a href="#services-section" class="nav-link dropdown-toggle"
                         data-bs-toggle="dropdown">Services</a>
                       <ul class="dropdown-menu">
                         <li>
@@ -190,11 +190,11 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" data-bs-toggle="dropdown">Careers</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Careers</a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="#contact-section" class="nav-link " data-bs-toggle="dropdown">Contact Us</a>
+                    <li class="nav-item">
+                      <a href="#contact-section" class="nav-link">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -509,7 +509,7 @@
 
       <!--service start-->
 
-      <section id="Services-section">
+      <section id="services-section">
         <div class="container">
           <div class="row justify-content-center text-center">
             <div class="col-lg-8 col-md-12">
@@ -1834,20 +1834,6 @@
 
   <!--back-to-top end-->
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/677ba442af5bfec1dbe741f5/1igtfj9uf';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
-
 
   <!-- inject js start -->
 
@@ -1900,6 +1886,17 @@
   <script src="js/theme-script.js"></script>
 
   <!-- inject js end -->
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+  </script>
 
 </body>
 
