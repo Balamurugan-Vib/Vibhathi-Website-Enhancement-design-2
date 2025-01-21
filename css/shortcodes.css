@@ -89,7 +89,7 @@
 }
 
 .themeht-btn.primary-btn {
-    background: linear-gradient(115deg, var(--themeht-primary-color), var(--themeht-secondary-color));
+    background: linear-gradient(115deg, #2b5706, #676e62);
     color: var(--themeht-white-color);
 }
 
@@ -836,9 +836,9 @@
     display: block;
     text-transform: capitalize;
     color: var(--themeht-text-color);
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 500;
+    font-size: 9px;
+    line-height: 18px;
+    font-weight: 600;
 }
 
 .widget .recent-post-desc a:hover {
