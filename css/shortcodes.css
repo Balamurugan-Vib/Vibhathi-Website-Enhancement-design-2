@@ -79,9 +79,9 @@
     position: relative;
     overflow: hidden;
     z-index: 9;
-    padding: 10px 10px 10px 10px;
+    padding: 7px;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 30px;
     border: none;
     color: var(--themeht-white-color);
     font-family: var(--themeht-secondary-font-family);
@@ -89,7 +89,7 @@
 }
 
 .themeht-btn.primary-btn {
-    background: linear-gradient(115deg, #2b5706, #676e62);
+    background: linear-gradient(115deg, #000000, #000000);
     color: var(--themeht-white-color);
 }
 
@@ -113,13 +113,13 @@
 .themeht-btn i {
     color: var(--themeht-text-color);
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: var(--themeht-white-color);
     border-radius: 100%;
     display: inline-block;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     margin-left: 10px;
 }
 
