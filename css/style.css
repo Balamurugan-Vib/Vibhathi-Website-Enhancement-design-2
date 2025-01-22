@@ -1381,6 +1381,7 @@ div#loom-companion-mv3 {
   
   .job-details-section ul li {
     margin-bottom: 10px;
+    font-size: 15px;
   }
   
   
@@ -1442,5 +1443,5 @@ div#loom-companion-mv3 {
   h2.jobdetailheader.mb-0 {
     font-size: 34px;
     font-weight: 500;
-    font-family: 'Poppins';
+    font-family: sans-serif;
   }
