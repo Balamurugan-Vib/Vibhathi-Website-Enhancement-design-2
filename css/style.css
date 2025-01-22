@@ -1445,3 +1445,8 @@ div#loom-companion-mv3 {
     font-weight: 500;
     font-family: sans-serif;
   }
+
+  /* hover for issue buttons */
+  .custom-btn:before {
+    background: linear-gradient(115deg, #295107, #295107) !important;
+}
