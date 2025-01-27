@@ -1552,7 +1552,7 @@ blockquote:after {
     text-align: center;
     position: relative;
     z-index: 9;
-    padding: 40px 40px 70px;
+    padding: 41px 40px 10px;
     background: var(--themeht-white-color);
     border-radius: 20px;
     margin-bottom: 25px
@@ -1564,7 +1564,7 @@ blockquote:after {
 }
 
 .service-item.style-2 .service-icon {
-    width: 150px;
+    width: 280px;
     margin: 0 auto;
     margin-bottom: 30px
 }

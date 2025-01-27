@@ -307,6 +307,8 @@ span,
     position: absolute;
     right: 5px;
     top: 5px;
+    width: 50%;
+    height: 83%;
 }
 
 .subscribe-btn:hover,
