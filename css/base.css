@@ -326,7 +326,7 @@ span,
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1200;
@@ -636,7 +636,8 @@ span,
 .contact-box {
     background: var(--themeht-white-color);
     padding: 0px 40px 20px 40px;
-    border-radius: 20px
+    border-radius: 20px;
+    height: 100%;
 }
 
 .contact-box .contact-info li {
