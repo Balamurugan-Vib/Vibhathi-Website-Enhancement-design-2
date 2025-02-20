@@ -591,6 +591,11 @@
         width: 100%;
         z-index: 1200;
     }
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start
+    }
+
 }
 
 @media (max-width:475px) {
