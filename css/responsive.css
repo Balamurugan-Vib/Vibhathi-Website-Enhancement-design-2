@@ -586,14 +586,10 @@
         padding: 170px 20px 120px;
     }
     .header {
-        position:fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         z-index: 1200;
-    }
-    .navbar-expand-lg {
-        flex-wrap: nowrap;
-        justify-content: flex-start
     }
 
 }
