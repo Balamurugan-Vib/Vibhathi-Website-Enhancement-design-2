@@ -340,7 +340,7 @@ span,
 #header-wrap.fixed-header {
     animation: smoothScroll 1s forwards;
     padding: 0;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
