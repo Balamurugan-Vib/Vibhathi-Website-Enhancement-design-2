@@ -10,6 +10,12 @@
     <meta name="description" content="HTML5 Template" />
     <meta name="author" content="www.themeht.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- Slick Slider CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
     <!-- Title -->
     <title>Vibhathi Labs Inc</title>
@@ -68,258 +74,261 @@
     <!-- inject css end -->
 
     <style>
-        /* csr laystout css 24-1-2025 */
-
-        h2.headercsr {
-            font-size: 28px;
-            padding: 20px 0px 20px;
-        }
-
-        .navtabs {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            margin-top: 40px;
-        }
-
-        .navtab {
-            padding: 15px;
-            font-size: 15px;
-            cursor: pointer;
-            background-color: #ffffff;
-            transition: background-color 0.3s;
-            width: -webkit-fill-available;
-            position: relative;
-        }
-
-        .navtab.active {
-            background-color: #7dc243;
-            color: white;
-        }
-
-        .navtab.active::after {
-            content: "";
-            position: absolute;
-            right: -27px;
-            top: 51%;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-top: 28px solid transparent;
-            border-bottom: 28px solid transparent;
-            border-left: 28px solid #7dc243;
-        }
-
-
-        .navtab:hover {
-            background-color: #7dc243;
-            color: white;
-        }
-
-        .tab-content-container {
-            flex: 1;
-            padding: 7px;
-            margin-right: 27px;
-            margin-top: 42px;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .carousel {
-            background-color: transparent;
-            /* Remove default background color */
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            /* Ensure the image covers the container */
-        }
-
-        .intro-csr {
-            margin-top: 27px;
-            margin-bottom: 27px;
-        }
-
-        .row.tabs {
-            padding: 10px 0px 25px;
-        }
-
-        img.img-blog {
-            width: 100%;
-        }
-
-        img.banner-img {
-            margin: 20px 0px;
-            width: 100%;
-        }
-
-        .tab {
-            display: flex;
-        }
-
-        /* .carousel-inner {
+		/* csr laystout css 24-1-2025 */
+	
+		h2.headercsr {
+			font-size: 28px;
+			padding: 5px 0px 5px;
+		}
+	
+		.navtabs {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-top: 40px;
+		}
+	
+		.navtab {
+			padding: 15px;
+			font-size: 15px;
+			cursor: pointer;
+			background-color: #ffffff;
+			transition: background-color 0.3s;
+			width: -webkit-fill-available;
+			position: relative;
+		}
+	
+		.navtab.active {
+			background-color: #7dc243;
+			color: white;
+		}
+	
+		.navtab.active::after {
+			content: "";
+			position: absolute;
+			right: -27px;
+			top: 51%;
+			transform: translateY(-50%);
+			width: 0;
+			height: 0;
+			border-top: 28px solid transparent;
+			border-bottom: 28px solid transparent;
+			border-left: 28px solid #7dc243;
+		}
+	
+	
+		.navtab:hover {
+			background-color: #7dc243;
+			color: white;
+		}
+	
+		.tab-content-container {
+			flex: 1;
+			padding: 7px;
+			margin-right: 27px;
+			margin-top: 42px;
+		}
+	
+		.tab-content {
+			display: none;
+		}
+	
+		.tab-content.active {
+			display: block;
+		}
+	
+		.carousel {
+			background-color: transparent;
+			/* Remove default background color */
+		}
+	
+		.carousel-item img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			/* Ensure the image covers the container */
+		}
+	
+		.intro-csr {
+			margin-top: 27px;
+			margin-bottom: 27px;
+		}
+	
+		.row.tabs {
+			padding: 10px 0px 25px;
+		}
+	
+		img.img-blog {
+			width: 100%;
+		}
+	
+		img.banner-img {
+			margin: 20px 0px;
+			width: 100%;
+		}
+	
+		.tab {
+			display: flex;
+		}
+	
+		/* .carousel-inner {
 			    height: 390px;
 			} */
+	
+	
+		.carousel-inner1 {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+	
+		.carousel-inner {
+			height: 480px;
+		}
+	
+		.carousel-inner img {
+			height: 100%;
+			object-fit: contain;
+		}
+	
+		.carousel-control-prev,
+		.carousel-control-next {
+			filter: invert(100%);
+		}
+	
+		.commitment-container {
+			margin-top: -40px;
+		}
+	
+		.carousel-control-prev {
+			left: 0;
+		}
+	
+		.carousel-control-prev,
+		.carousel-control-next {
+			position: absolute;
+			top: 57%;
+			transform: translateY(-50%);
+			width: 5%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/* background: rgba(0, 0, 0, 0.5); */
+			color: white;
+		}
+	
+		.carousel-control-prev,
+		.carousel-control-next {
+			filter: invert(0);
+		}
+	
+		.carousel-control-next {
+			right: 0;
+		}
+	
+		.carousel-indicators {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	
+		.carousel-indicators li {
+			background-color: #000;
+			border: 1px solid #fff;
+			cursor: pointer;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 5px;
+			border-radius: 50%;
+			opacity: 0.5;
+		}
+	
+		.carousel-indicators .active {
+			background-color: #fff;
+			opacity: 1;
+		}
+	
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			width: 2rem;
+			height: 2rem;
+		}
+	
+		.social-media-icons {
+			margin-top: 5px;
+		}
+	
+		@media (max-width: 576px) {
+	
+			.carousel-control-prev,
+			.carousel-control-next {
+				width: 10%;
+			}
+	
+			.carousel-control-prev-icon,
+			.carousel-control-next-icon {
+				width: 30px;
+				height: 30px;
+			}
+	
+			.carousel-indicators {
+				bottom: -20px;
+			}
+	
+			.carousel-indicators li {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	
+		@media (max-width: 1000px) {
+			.carousel-inner {
+				height: auto;
+			}
+	
+			.carousel-inner img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+	
+			.carousel-control-prev,
+			.carousel-control-next {
+				width: 10%;
+			}
+	
+			.carousel-control-prev-icon,
+			.carousel-control-next-icon {
+				width: 30px;
+				height: 30px;
+			}
+	
+			.carousel-indicators {
+				bottom: 0px;
+			}
+	
+			.carousel-indicators li {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	
+	
+		.section-title.position-relative.pb-3.mb-5.mx-auto {
+			margin-top: 20px;
+		}
+	</style>
 
 
-        .carousel-inner1 {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
 
-        .carousel-inner {
-            height: 480px;
-        }
-
-        .carousel-inner img {
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            filter: invert(100%);
-        }
-
-        .commitment-container {
-            margin-top: -40px;
-        }
-
-        .carousel-control-prev {
-            left: 0;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            position: absolute;
-            top: 57%;
-            transform: translateY(-50%);
-            width: 5%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* background: rgba(0, 0, 0, 0.5); */
-            color: white;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            filter: invert(0);
-        }
-
-        .carousel-control-next {
-            right: 0;
-        }
-
-        .carousel-indicators {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .carousel-indicators li {
-            background-color: #000;
-            border: 1px solid #fff;
-            cursor: pointer;
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin: 0 5px;
-            border-radius: 50%;
-            opacity: 0.5;
-        }
-
-        .carousel-indicators .active {
-            background-color: #fff;
-            opacity: 1;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            width: 2rem;
-            height: 2rem;
-        }
-
-        .social-media-icons {
-            margin-top: 5px;
-        }
-
-        @media (max-width: 576px) {
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                width: 10%;
-            }
-
-            .carousel-control-prev-icon,
-            .carousel-control-next-icon {
-                width: 30px;
-                height: 30px;
-            }
-
-            .carousel-indicators {
-                bottom: -20px;
-            }
-
-            .carousel-indicators li {
-                width: 10px;
-                height: 10px;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            .carousel-inner {
-                height: auto;
-            }
-
-            .carousel-inner img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                width: 10%;
-            }
-
-            .carousel-control-prev-icon,
-            .carousel-control-next-icon {
-                width: 30px;
-                height: 30px;
-            }
-
-            .carousel-indicators {
-                bottom: 0px;
-            }
-
-            .carousel-indicators li {
-                width: 10px;
-                height: 10px;
-            }
-        }
-
-
-        .section-title.position-relative.pb-3.mb-5.mx-auto {
-            margin-top: 20px;
-        }
-    </style>
 
 
 </head>
@@ -1306,24 +1315,33 @@
 
     <!--back-to-top end-->
 
-    <!-- csr page js 24-1-2025 -->
+	<!-- csr page js 24-1-2025 -->
 
-    <script>
-        document.querySelectorAll('.navtab').forEach(tab => {
-            tab.addEventListener('click', function () {
-                document.querySelectorAll('.navtab').forEach(tab => tab.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-                document.querySelectorAll('.carousel').forEach(carousel => carousel.style.display = 'none');
+	<script>
+		document.querySelectorAll('.navtab').forEach(tab => {
+			tab.addEventListener('click', function () {
+				document.querySelectorAll('.navtab').forEach(tab => tab.classList.remove('active'));
+				document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+				document.querySelectorAll('.carousel').forEach(carousel => carousel.style.display = 'none');
+	
+				this.classList.add('active');
+				document.getElementById(this.dataset.target).classList.add('active');
+				document.getElementById(`carousel-${this.dataset.target}`).style.display = 'block';
+			});
+		});
+	
+		// Initially display the first carousel
+		document.getElementById('carousel-tab1').style.display = 'block';
+	</script>
 
-                this.classList.add('active');
-                document.getElementById(this.dataset.target).classList.add('active');
-                document.getElementById(`carousel-${this.dataset.target}`).style.display = 'block';
-            });
-        });
-
-        // Initially display the first carousel
-        document.getElementById('carousel-tab1').style.display = 'block';
-    </script>
+<script>
+    $(document).ready(function(){
+      $('.your-slider-class').slick({
+        // Your settings here
+      });
+    });
+  </script>
+  
 
 
 
@@ -1403,6 +1421,15 @@
         });
 
     </script> -->
+
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
